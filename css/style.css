@@ -165,9 +165,11 @@ html, body{
     }
     a{
         margin: auto;
+        display: flex;
+        justify-content: center;
     }
     .nav-sociais{
-        width: 25px;
+        width: 30px;
         padding: 10px;
         
     }
@@ -177,23 +179,27 @@ html, body{
     }
     .nav-home{
         gap: 60px;
-        margin: 30px 0px;
-        font-size: 20px;
+        margin: 20px 0px;
+        font-size: 30px;
         list-style: none;
         text-align: center;
+        
     }
-    nav{
+    nav li{
         margin: auto;
+        border-bottom: 1px solid red;
+        width: 150px;
     }
 
     .home{
         display: flex;
         list-style: none;
-        gap: 20px;
+        gap: 50px;
         margin: 25px;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 600;
         text-transform: uppercase;
+        
     }
 
     .redes-sociais,.home, .video{
@@ -247,13 +253,9 @@ html, body{
     text-align: right;
     top: 0;
     overflow-x: hidden;
-    transition: all 0.5s;
+    transition: all 0.4s;
   }
   
-a{
-    display: flex;
-    justify-content: center;
-}
 
   .menu-sociais{
     width: 30px;
