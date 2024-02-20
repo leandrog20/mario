@@ -222,12 +222,12 @@ html, body{
     .descricao{
         margin: 10px 45px;
         text-align: justify;
-       
+       font-size: 20px;
     }
     .btn-1, .btn-2{
-        margin: 20px;
+        margin: 50px 20px 20px 20px;
         font-family: mukta, sans-serif;
-        padding: 15px 40px;
+        padding: 15px 30px;
         font-size: 15px;
         text-transform: uppercase;
         border-radius: 30px;
@@ -238,7 +238,7 @@ html, body{
     }
 
     .img-mario{
-        margin: 50px;
+        margin: 80px;
         width: 300px;
         height: 350px;
     }
@@ -254,6 +254,7 @@ html, body{
     top: 0;
     overflow-x: hidden;
     transition: all 0.4s;
+    -webkit-transition: all 0.4s;
   }
   
 
