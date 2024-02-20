@@ -152,6 +152,7 @@ html, body{
         display: flex;
         justify-content: space-between;
         gap: 80px;
+        padding: 20px;
         
     }
     .logo{
@@ -220,8 +221,8 @@ html, body{
     .btn-1, .btn-2{
         margin: 20px;
         font-family: mukta, sans-serif;
-        padding: 10px 30px;
-        font-size: 10px;
+        padding: 15px 40px;
+        font-size: 15px;
         text-transform: uppercase;
         border-radius: 30px;
         border: none;
@@ -231,7 +232,7 @@ html, body{
     }
 
     .img-mario{
-        margin: 30px 0px 0px 0px;
+        margin: 50px;
         width: 300px;
         height: 350px;
     }
