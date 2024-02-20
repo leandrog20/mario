@@ -1,0 +1,264 @@
+
+@media screen and (min-width: 992px) and (max-width: 2300px) {
+    
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+.fechou{
+    position: absolute;
+    display: none;
+}
+.nav-redes-sociais > a, .menu > img, .nav-menu, .nav-icone, .icone-menu, .nav-home{
+    display: none;
+    
+}
+html, body{
+    overflow: hidden;
+    font-family: mukta, sans-serif;
+    color: darkgray;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0,0,0,0.9360994397759104) 0%, rgba(0,0,0,0.6027661064425771) 47%, rgba(0,0,0,0.9332983193277311) 100%);
+   
+}
+.logo{
+    width: 60px;
+    margin-right: 200px;
+    margin-top: 10px;
+
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.home{
+    display: flex;
+}
+
+.home li{
+    margin: 10px 15px 10px 10px;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: border-bottom 0.3s;
+}
+
+.home li:hover{
+    border-bottom: 1px solid red;
+}
+
+.sociais{
+    width: 20px;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.sociais:hover{
+    transform: translate(5px, -4px)
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-descricao {
+    width: 210px;
+    margin-top: 110px;
+}
+
+.descricao{
+    padding-top: 20px;
+    width: 490px;
+    font-size: 15px;
+}
+
+.img-mario{
+    height: 600px;
+}
+
+.btn{
+    margin: 20px 10px 0px 0px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-family: mukta, sans-serif;
+    border:none;
+    border-radius: 20px;
+    transition: box-shadow 0.4s ease;
+    font-size: 12px;
+    font-weight: 400;
+    box-shadow: 0 0 40px 40px red inset, 0 0 0 red;
+    color: white;
+}
+
+.btn:hover{
+    box-shadow: 0 0 5px 0px rgba(255, 0, 0, 0.589) inset, 0 0 10px 5px rgba(255, 0, 0, 0.539);
+    background-color: transparent;
+}
+
+.btn-transparent{
+    margin: 20px 10px 0px 0px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+    font-family: mukta, sans-serif;
+    border: 1px solid red;
+    border-radius: 20px;
+    transition: box-shadow 0.4s ease;
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 400;
+    color: white
+}
+
+.btn-transparent:hover{
+    box-shadow: 0 0 40px 40px red inset;
+}
+
+.video{
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+    position: absolute;
+}
+
+}
+
+@media (min-width: 375px) and (max-width: 750px) {
+    *{
+        padding: 0px;
+        margin: 0px;
+        text-decoration: none;
+    }
+    html, body{
+        width: 100vw;
+        height: 100vh;
+        font-family: mukta, sans-serif;
+        box-sizing: border-box;
+        color: darkgrey;
+        overflow-x: hidden;
+    }
+   
+    
+    .cabecalho{
+        background-color: rgb(144, 5, 5);
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+        
+    }
+    .logo{
+        width: 60px;
+        margin: 10px 20px 15px 0px;
+    }
+    .icone-menu{
+        width: 30px;
+        margin: 30px
+    }
+    a{
+        margin: auto;
+    }
+    .nav-sociais{
+        width: 25px;
+        padding: 10px;
+        
+    }
+    .nav-icone{
+        width: 30px;
+        margin: 30px;
+    }
+    .nav-home{
+        gap: 60px;
+        margin: 30px 0px;
+        font-size: 20px;
+        list-style: none;
+        text-align: center;
+    }
+    nav{
+        margin: auto;
+    }
+
+    .home{
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        margin: 25px;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .redes-sociais,.home, .video{
+        display: none;
+    }
+
+    .container{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(144, 5, 5);
+        z-index: -1;
+    }
+
+    .img-descricao{
+        width: 200px;
+        margin: 90px 100px 20px 90px;
+    }
+    .descricao{
+        margin: 10px 45px;
+        text-align: justify;
+       
+    }
+    .btn-1, .btn-2{
+        margin: 20px;
+        font-family: mukta, sans-serif;
+        padding: 10px 30px;
+        font-size: 10px;
+        text-transform: uppercase;
+        border-radius: 30px;
+        border: none;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    .img-mario{
+        margin: 30px 0px 0px 0px;
+        width: 300px;
+        height: 350px;
+    }
+
+  .fechou{
+    z-index: 9;
+    background-color: black;
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    text-align: right;
+    top: 0;
+    overflow-x: hidden;
+    transition: all 0.5s;
+  }
+  
+a{
+    display: flex;
+    justify-content: center;
+}
+
+  .menu-sociais{
+    width: 30px;
+    margin: 10px;
+  }
+
+
+}
+
