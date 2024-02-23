@@ -131,7 +131,7 @@ html, body{
 
 }
 
-@media (min-width: 375px) and (max-width: 750px) {
+@media (min-width: 300px) and (max-width: 750px) {
     *{
         padding: 0px;
         margin: 0px;
@@ -219,13 +219,19 @@ html, body{
         width: 200px;
         margin: 90px 100px 20px 90px;
     }
+
     .descricao{
         margin: 10px 45px;
         text-align: justify;
        font-size: 20px;
     }
+
+    .botoes{
+        margin-top: 40px;
+    }
+
     .btn-1, .btn-2{
-        margin: 50px 20px 20px 20px;
+        margin: 20px;
         font-family: mukta, sans-serif;
         padding: 15px 30px;
         font-size: 15px;
@@ -238,7 +244,7 @@ html, body{
     }
 
     .img-mario{
-        margin: 90px;
+        margin: 90px 40px;
         width: 300px;
         height: 350px;
     }
