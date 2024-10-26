@@ -1,12 +1,14 @@
-var abriu = document.querySelector('.abriu')
-var fechou = document.querySelector('.fechou')
-abriu.addEventListener('click', abrir)
-fechou.addEventListener('click', fechar)
 
-function abrir(){
-    fechou.style.width = '50%'
+let icon = document.querySelector(".icon")
+let btn = document.querySelector(".btn")
+
+btn.addEventListener('mouseover', over)
+btn.addEventListener('mouseout', out)
+
+function over(){
+    icon.style.animation = "bounce infinite .5s"
 }
 
-function fechar(){
-    fechou.style.width = '0px'
+function out(){
+    icon.style.animation = "none"
 }
