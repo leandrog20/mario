@@ -61,6 +61,7 @@ background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(13, 13, 14, 0.801) 52%
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .img-descricao {
@@ -106,7 +107,6 @@ background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(13, 13, 14, 0.801) 52%
 
 .video{
     display: flex;
-    
     width: 100vw;
     height: 100vh;  
     overflow: hidden;
@@ -114,13 +114,62 @@ background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(13, 13, 14, 0.801) 52%
     position: absolute;
 }
 
+.modal-container{
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation: open .15s;
+}
+
+.modal{
+    background-color: rgb(93, 9, 9);
+    width: 600px;
+    height: 400px;
+    position: fixed;
+    border-radius: 10px;
+    
+}
+.btn-close{
+    cursor: pointer;
+    padding: 5px 0px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    justify-content: end;
+    margin-left: 10px;
+    transition: all ease-in-out .4s;
+}
+
+.btn-close:hover{
+    transform: translatey(2px);
+    transform: translateX(2px);
+}
 
 
-
+.trailer{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 @keyframes bounce { 
-    
     0% {transform: translateY(0px);} 
     50% {transform: translateY(-15px);} 
     100% {transform: translateY(0px);} 
  }
+
+ @keyframes open {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+ 
+
