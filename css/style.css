@@ -11,7 +11,6 @@ html, body{
     color: whitesmoke;
     width: 100vw;
     height: 100vh;
-   
     background: rgb(0,0,0);
 background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(13, 13, 14, 0.801) 52%, rgb(0, 0, 0) 100%);
     
@@ -56,7 +55,6 @@ background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(13, 13, 14, 0.801) 52%
 }
 
 .container{
-    flex-wrap: wrap;
     margin-top: 5%;
     gap: 10%;
     display: flex;
@@ -171,13 +169,10 @@ background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(13, 13, 14, 0.801) 52%
     0% {opacity: 0;}
     100% {opacity: 1;}
  }
-
+ 
  @media (max-width: 800px) {
-   
-      
     .movie{
         display: none;
-        
     }
 
     
@@ -203,13 +198,12 @@ background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(13, 13, 14, 0.801) 52%
     }
 
     .container{
-
         margin: auto;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
       background-color: brown;
+      height: 100%;
     }
 
     .img-descricao{
@@ -218,7 +212,6 @@ background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(13, 13, 14, 0.801) 52%
         margin-left: 20px;
     }
     .descricao{
-        width: 200px;
         margin: auto;
     }
 
@@ -228,7 +221,6 @@ background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(13, 13, 14, 0.801) 52%
     }
 
     .img-mario{
-        margin-top: 60px;
         width: 150px;
     }
 
@@ -243,16 +235,23 @@ background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(13, 13, 14, 0.801) 52%
     }
 
     .modal{
-        width: 250px;
-        height: 200px;
+        width: 90%;
+        height: 350px;
     }
 
     .iframe{
-        width: 200px;
-        height: 120px;
+        width: 90%;
+        height: 280px;
     }
 
+ }
 
+ @media (max-width: 500px) {
+    
+    .descricao{
+        width: 200px;
+    }
+    
  }
 
  
